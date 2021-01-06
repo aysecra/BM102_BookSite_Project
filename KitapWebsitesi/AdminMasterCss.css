@@ -1,0 +1,53 @@
+﻿body {
+    background-color: #000000;
+}
+
+#topArea {
+    background-color: #2B2B2B;
+    height: 100px;
+    width: 100%;
+}
+.menu {
+    float:left;
+    background-color: #2B2B2B;
+    height: auto;
+    width: 25%;
+    margin-left: 2%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.content {
+    float:left;
+    background-color: #2B2B2B;
+    height: auto;
+    width: 70%;
+    margin-left: 1%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.logo {
+    font-size: 24pt;
+    font-family: Calibri;
+    color: #CCCCCC;
+}
+a:link {
+    text-decoration: none;
+    color: #CCCCCC;
+}
+
+a:active {
+    color: #CCCCCC;
+}
+
+a:visited {
+    color: #CCCCCC;
+}
+.adminDiv {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    width: 200px;
+    height: 50px;
+    font-family: Calibri;
+    color: #DCDDD8;
+}

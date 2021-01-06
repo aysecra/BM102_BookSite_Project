@@ -1,0 +1,47 @@
+﻿.bookList {
+    background-color: #DCDDD8;
+    width: 200px;
+    height: 320px;
+    margin-top: 10px;
+}
+
+.bookLabel {
+    color: #354B5E;
+    font-size: small;
+    font-family: Calibri;
+}
+
+.tdCenter {
+    text-align: center;
+}
+
+.bookCost {
+    color: #354B5E;
+    font-size: medium;
+    font-family: Calibri;
+}
+
+.txt {
+    width: 400px;
+    font-family: Calibri;
+    font-size: 12pt;
+    background-color: #DCDDD8;
+    color: black;
+}
+.tdReg {
+    font-family: Calibri;
+    font-size: 13pt;
+    text-align: right;
+    color: #DCDDD8;
+    font-weight: bold;
+    width: 195px;
+}
+.txtAdres {
+    width: 400px;
+    height:250px;
+    font-family: Calibri;
+    font-size: 12pt;
+    background-color: #DCDDD8;
+    color: black;
+}
+

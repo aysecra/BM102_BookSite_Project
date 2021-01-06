@@ -1,0 +1,82 @@
+﻿.panelUpdate {
+    width: 100%;
+    height: 50px;
+    background-color: #354B5E;
+    font-family: Calibri;
+    font-size: 24pt;
+    color: #DCDDD8;
+    text-align: center;
+    font-weight: bold;
+}
+
+.panelContent {
+    margin-left: 5%;
+    width: 90%;
+}
+
+.tdImg {
+    height: 150px;
+    width: 150px;
+}
+
+.table {
+    width: 100%;
+    border-style: solid;
+    border-color: #DCDDD8;
+    border-width: 2px;
+}
+
+.text {
+    width: 100px;
+    font-family: Calibri;
+    text-align: right;
+    font-size: 18px;
+    color: #DCDDD8;
+    font-weight: bold;
+    border-style: solid;
+    border-color: #DCDDD8;
+    border-width: 2px;
+}
+
+.label {
+    font-family: Calibri;
+    text-align: left;
+    font-size: 18px;
+    color: #DCDDD8;
+    font-weight: bold;
+    width: 200px;
+    border-style: solid;
+    border-color: #DCDDD8;
+    border-width: 2px;
+}
+
+.pd {
+    font-family: Calibri;
+    text-align: right;
+    font-size: 18px;
+    color: #DCDDD8;
+    font-weight: bold;
+    width: 300px;
+}
+
+.txb {
+    font-family: Calibri;
+    width: 350px;
+    font-size: 16px;
+    background-color: #DCDDD8;
+}
+
+.txbM {
+    font-family: Calibri;
+    font-size: 16px;
+    width: 350px;
+    height: 100px;
+    background-color: #DCDDD8;
+}
+
+
+.btn {
+    font-weight: bold;
+    color: #354B5E;
+    background-color: #C8C9C5;
+}

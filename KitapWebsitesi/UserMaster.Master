@@ -1,0 +1,170 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserMaster.Master.cs" Inherits="KitapWebsitesi.User" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="UserMasterCss.css" rel="stylesheet" />
+    <style type="text/css">
+     
+        .auto-style2 {
+            background-color: #475F77;
+        }
+
+        .auto-style1 {
+            width: 100%;
+        }
+
+        .auto-style3 {
+            font-size: 20px;
+            color: #DCDDD8;
+        }
+
+        .auto-style4 {
+            color: #DCDDD8;
+        }
+
+        .auto-style5 {
+            text-align: center;
+        }
+
+        .auto-style6 {
+            font-size: xx-large;
+            color: #475F77;
+            font-family: Calibri;
+        }
+
+        .lgn1 {
+            position: absolute;
+            float: right;
+            right: 85px;
+            top: 15px;
+            text-align: right;
+            font-family: Calibri;
+            color: #DCDDD8;
+        }
+
+        .lgn2 {
+            position: absolute;
+            float: right;
+            right: 15px;
+            top: 15px;
+            text-align: right;
+            font-family: Calibri;
+            color: #DCDDD8;
+        }
+
+        .userDiv {
+            position: absolute;
+            right: 15px;
+            top: 20px;
+            width: 200px;
+            height: 50px;
+            font-family: Calibri;
+            color: #DCDDD8;
+        }
+
+        .basket {
+            position: absolute;
+            right: 230px;
+            top: 35px;
+        }
+
+        .adsoyad {
+            position: absolute;
+            top: 5px;
+            font-size: 12.5pt;
+            color: #DCDDD8;
+            font-family: Calibri;
+        }
+
+        .auto-style7 {
+            position: absolute;
+            top: 5px;
+            font-size: 12.5pt;
+            color: #354B5E;
+            font-family: Calibri;
+            bottom: 27px;
+            left: 48px;
+        }
+
+        .auto-style8 {
+            color: #354B5E;
+        }
+        .txtSearchBar{
+            margin-top:10px;
+            margin-left:17%;
+            font-family:Calibri;
+            font-size:medium;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="topArea">
+            <asp:ImageButton ID="btn_menu" runat="server" Height="50px" ImageUrl="~/Icon/menu.png" OnClick="btn_menu_Click" Width="50px" />
+            <a href="U_Homepage.aspx">
+                <asp:Image ID="Image1" runat="server" Height="50px" ImageUrl="~/Icon/book.png" Width="50px" />
+                <strong><span class="auto-style6">BOOKSITE</span></strong>
+            </a>
+            <a href="U_Login.aspx">
+                <strong><span class="lgn1">
+                    <asp:Label ID="lbl_giris" runat="server" Text="Giriş Yap"></asp:Label></span></strong></a>
+            <a href="U_UserRegistration.aspx">
+                <strong><span class="lgn2">
+                    <asp:Label ID="lbl_kayit" runat="server" Text="Kayıt Ol"></asp:Label></span></strong></a>
+            <div class="userDiv">
+                <asp:Panel ID="Panel2" runat="server" BorderStyle="None" BorderWidth="1px" BorderColor="#354B5E">
+                    <a href="U_UserProfile.aspx">
+                        <asp:Image ID="img_user" runat="server" Height="45px" Width="45px" /></a>
+                    <strong>
+                        <asp:Label ID="lbl_adsoyad" runat="server" CssClass="auto-style7" Text="Label"></asp:Label>
+                        <a href="U_Homepage.aspx?islem=cikis">&nbsp;</a></strong><a href="U_Homepage.aspx?islem=cikis"><span class="auto-style8"><strong>Çıkış</strong></span></a>
+                </asp:Panel>
+
+            </div>
+            <a href="U_Basket.aspx">
+                <asp:Image ID="img_basket" CssClass="basket" runat="server" Height="30px" Width="30px" ImageUrl="~/Icon/basket.png" /></a>
+            <div id="menu" style="border-color: #000000; border-bottom-width: thin; border-right-width: thin; border-top-width: thin; border-style: solid solid none solid">
+                <asp:Panel ID="Panel1" runat="server" Width="300px">
+                    <asp:DataList ID="DataList1" runat="server" CssClass="auto-style2" Width="100%">
+                        <ItemTemplate>
+                            <table class="auto-style1" style="border-color: #000000; border-width: thin; border-style: none">
+                                <tr>
+                                    <td style="border-color: #000000; border-style: none none solid none; border-top-width: thin; border-bottom-width: thin;" class="auto-style4"><strong>
+                                        <a href="U_CategoriesBooks.aspx?kategori=<%#Eval("KategoriId") %>">
+                                            <asp:Label ID="Label1" runat="server" Text='<%# Eval("KategoriAd") %>' Width="100%" CssClass="auto-style3"></asp:Label></a>
+                                    </strong></td>
+                                </tr>
+                            </table>
+                        </ItemTemplate>
+                    </asp:DataList>
+                </asp:Panel>
+            </div>
+            <asp:TextBox ID="txt_search" runat="server" Width="565px" CssClass="txtSearchBar" Height="25px" TextMode="Search" BackColor="#DCDDD8" ></asp:TextBox>
+
+            <asp:ImageButton ID="imgBtn_search" runat="server" Height="25px" ImageUrl="~/Icon/search.png" OnClick="imgBtn_search_Click" Width="25px" />
+
+        </div>
+        <div id="topMenu">
+            <table id="topMenuTable">
+                <tr>
+                    <td class="auto-style5"><a href="U_NewReleases.aspx"><strong>YENİ ÇIKANLAR</strong></a></td>
+                    <td class="auto-style5"><a href="U_BestSellers.aspx"><strong>ÇOK SATANLAR</strong></a></td>
+                    <td class="auto-style5"><a href="U_Writers.aspx"><strong>YAZARLAR</strong></a></td>
+                    <td class="auto-style5"><a href="U_Contact.aspx"><strong>İLETİŞİM</strong></a></td>
+                    <td class="auto-style5"><a href="U_AboutUs.aspx"><strong>HAKKIMIZDA</strong></a></td>
+                </tr>
+            </table>
+        </div>
+        <div id="content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+            <footer id="subArea"></footer>
+    </form>
+</body>
+</html>

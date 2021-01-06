@@ -1,0 +1,111 @@
+﻿.panel1 {
+    width: 100%;
+    height: 50px;
+    background-color: #006699;
+}
+
+.table1 {
+    height: 50px;
+    width: 100%;
+}
+
+.pbutton {
+    height: 50px;
+    width: 50px;
+    font-weight: bold;
+    background-color: #CCCCCC;
+    color: black;
+}
+
+.td1 {
+    height: 50px;
+    width: 60px;
+    text-align: center;
+}
+
+.td2 {
+    font-family: Calibri;
+    font-size: 24px;
+    text-align: center;
+    color: #CCCCCC;
+    font-weight: bold;
+}
+
+.panel2 {
+    width: 95%;
+    height: auto;
+    margin-bottom: 10px;
+    margin-left: 2.5%;
+}
+
+.td3 {
+    font-family: Calibri;
+    font-size: 13pt;
+    text-align: right;
+    color: #CCCCCC;
+    font-weight: bold;
+    width: 195px;
+}
+
+.td4 {
+    width =100%;
+}
+
+.txt {
+    width: 400px;
+    font-family: Calibri;
+    font-size: 12pt;
+    background-color: #CCCCCC;
+    color: black;
+}
+
+.txticerik {
+    width: 700px;
+    height: 400px;
+    font-family: Calibri;
+    font-size: 12pt;
+    background-color: #CCCCCC;
+    color: black;
+}
+
+.dtl {
+    width: 100%;
+}
+
+.img {
+    width =40px;
+    height: 40px;
+}
+
+.imgdt {
+    text-align: left;
+    width: 50px;
+}
+
+.td5 {
+    font-family: Calibri;
+    font-size: 13pt;
+    text-align: left;
+    color: #CCCCCC;
+    font-weight: bold;
+    width: 110px;
+}
+
+.btn {
+    font-weight: bold;
+    height: 30px;
+    width: 300px;
+    background-color: #CCCCCC;
+    color: black;
+}
+
+.panelUpdate {
+    width: 100%;
+    height: 50px;
+    background-color: #5A8F29;
+    font-family: Calibri;
+    font-size: 24pt;
+    color: #CCCCCC;
+    text-align: center;
+    font-weight: bold;
+}

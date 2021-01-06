@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="KitapWebsitesi.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="AdminMasterCss.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+
+        .auto-style2 {
+            text-align: center;
+            font-size: large;
+        }
+
+        .auto-style3 {
+            text-align: center;
+            font-size: large;
+            font-family: Calibri;
+            color: #CCCCCC;
+        }
+
+        .auto-style8 {
+            color: #CCCCCC;
+            font-size: medium;
+        }
+
+        .auto-style9 {
+            text-align: center;
+            margin-left: 120px;
+        }
+
+        .auto-style10 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="topArea">
+            <asp:Image ID="Image2" runat="server" Height="50px" ImageUrl="~/Icon/book.png" Width="50px" />
+            <strong><span class="logo">BOOKSITE</span></strong>
+            <div class="adminDiv">
+                <asp:Panel ID="Panel2" runat="server" BorderStyle="None" BorderWidth="1px" BorderColor="#354B5E">
+                    <table class="auto-style1">
+                        <tr>
+                            <td class="auto-style9">&nbsp; <strong>
+                                <asp:Label ID="lbl_name" runat="server" CssClass="auto-style7" Style="font-size: medium; color: #CCCCCC" Text="Label"></asp:Label>
+                            </strong></td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style10">&nbsp;<span class="auto-style8"> </span><a href="U_Homepage.aspx?islem=cikis"><span class="auto-style8"><strong>Çıkış</strong></span></a></td>
+                        </tr>
+                    </table>
+                </asp:Panel>
+
+            </div>
+        </div>
+        <div>
+            <div class="menu">
+
+                <table class="auto-style1">
+                    <tr>
+                        <td class="auto-style2" style="font-family: Calibri; color: #CCCCCC; border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #CCCCCC;"><a href="A_BookSettings.aspx"><strong>Kitap Ayarları</strong></a></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style2" style="font-family: Calibri; color: #CCCCCC; border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #CCCCCC;"><a href="A_CommandAssent.aspx"><strong>Yorum Onay</strong></a></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style3" style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #CCCCCC"><a href="A_Orders.aspx"><strong>Siparişler</strong></a></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style3" style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #CCCCCC"><a href="A_Contact.aspx"><strong>İletişim</strong></a></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style3" style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #CCCCCC"><a href="A_SalesAmount.aspx"><strong>Satış Miktarı</strong></a></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style3"><a href="A_AdminRegistration.aspx"><strong>Admin Kayıt</strong></a></td>
+                    </tr>
+
+                </table>
+
+            </div>
+            <div class="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
